@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box; /* Makes padding and border included in element's total width/height */
+}
+
+body {
+  background-color: #eaf6ff; /* Light blue background */
+  color: #333; /* Dark text color */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2em;
+  color: #2980b9;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #16a085;
+  margin: 15px 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #fff; /* White background for nav */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Use Flexbox for layout */
+  justify-content: center; /* Center items */
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav li:hover {
+  color: #2980b9; /* Change color on hover */
+  text-decoration: underline;
+}
+
+/* Weather Information */
+.weather-info {
+  background-color: #fff; /* White background for weather info */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.weather-info p {
+  margin: 10px 0;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%; /* Ensure responsive images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners */
+  margin: 10px 0;
+}
+
+/* Forecast Section */
+.forecast {
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items */
+}
+
+.forecast-item {
+  background-color: #f9f9f9; /* Light background for forecast items */
+  border: 1px solid #ddd; /* Border around items */
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.2s; /* Scale effect on hover */
+}
+
+.forecast-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .forecast {
+    flex-direction: column; /* Stack forecast items vertically */
+  }
+}

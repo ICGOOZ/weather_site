@@ -4,49 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyWeatherApp</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1> Latest weather</h1>
-    <h2>Weather summary</h2>
-    <h3>Salt lake City</h3>
-    <header></header>
     <nav>
-      <ul>
-        <li style="float: center">home</li>
+    <ul>
+        <li>Home</li>
+        <li>News</li>
+        <li>Weather</li>
+        <li>About</li>
+    </ul>
+</nav>
 
-        <li style="float: center">news</li>
-        <li style="float: centert">weather</li>
-        <li style="float: center">about</li>
-      </ul>
-      <p>
-      Currently: Partly Cloudy</p>
-      <p>Tempature: 93 °F</p> 
-      <p> Feels like: 90 °F</p>
-      <p>Humidity 25%</p>
-      <p> wind speed: N8 MPH</p>
+<div class="weather-info">
+    <p>Currently: Partly Cloudy</p>
+    <p>Temperature: 93 °F</p> 
+    <p>Feels like: 90 °F</p>
+    <p>Humidity: 25%</p>
+    <p>Wind Speed: N 8 MPH</p>
+    <img src="../images_of_weather/sample_image.jpg" alt="Weather Image">
+</div>
 
-    
-      <img src="../Images of weather/partlyCloudy.jpg" style="width: 200px;" alt="">
-      <h1>5 Day Forcast</h1>
-      <h3> Salt Lake City</h3>
-         <p>
-        <img src="../Images of weather/Sunny.jpg" style="width:100px;"/p>
-  <p> day 1 105 °F </p>
-
- <img src="../Images of weather/Umbrella.jpg"style="width:100px;"  </img>   
-   <p> Day 2 103 °F</p>
-
-<img src="../Images of weather/partlyCloudy.jpg" style="width: 100px;"</img>
-<p>Day 3 102 °F</p>
-
-<img src="../Images of weather/thunderStorms.jpg"style="width: 100px;" </img>
-<p>Day 4 95 °F</p>
-
-<img src="../Images of weather/partlyCloudy.jpg"style="width:100px;" </img>
-
-<p>Day 5 102 °F</p>
-
-
+<h1>5 Day Forecast</h1>
+<div class="forecast">
+    <div class="forecast-item">
+        <img src="../images_of_weather/Sunny.jpg" alt="Sunny">
+        <p>Day 1: 105 °F</p>
+    </div>
+    <div class="forecast-item">
+        <img src="../images_of_weather/Umbrella.jpg" alt="Umbrella">
+        <p>Day 2: 103 °F</p>
+    </div>
+    <div class="forecast-item">
+        <img src="../images_of_weather/PartlyCloudy.jpg" alt="Partly Cloudy">
+        <p>Day 3: 102 °F</p>
+    </div>
+    <div class="forecast-item">
+        <img src="../images_of_weather/ThunderStorms.jpg" alt="Thunderstorms">
+        <p>Day 4: 95 °F</p>
+    </div>
+    <div class="forecast-item">
+        <img src="../images_of_weather/PartlyCloudy.jpg" alt="Partly Cloudy">
+        <p>Day 5: 102 °F</p>
+    </div>
+</div>
 
 
 
